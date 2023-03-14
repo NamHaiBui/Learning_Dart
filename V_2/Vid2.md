@@ -29,7 +29,7 @@
 - **`const`** can only be assigned a constant value.
 - **`late`**: is a keyword used along side other dynamic keywords in the format `late [dynamic keyword]`. Variables with this keyword will only be initialized when used. (Initialization will only happens once)
 
-- You will need to have a convention when initializing data such as using `[dynamic keyword] [static data type]` or `[static data type]` or `[dynamic keyword]`
+- You will need to have a convention when initializing data such as using `[dynamic keyword] [static data type]` or `[static data type]` or `[dynamic keyword]`. However, you can't declare `var [static data type]`.
 
 - dart can warn you when you are not adhering to the convention that you are using in the code by setting:
 `linter:
@@ -43,8 +43,8 @@ in analysis_options.yaml file.
 
 ### Commenting
 
-`///` will automatically comment out the next line when ascending
-`//` does not
+`///` will automatically comment out the next line when ascending (Used for documenting)
+`//` does not (Used for Commenting out codes)
 `//` at the start of the file will notify the coder of the special ignoring configuration of the file.
 
 ### Data Types
